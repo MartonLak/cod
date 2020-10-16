@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class  Student implements Human
 {
+
     public void walk() {
 
     }
@@ -13,11 +14,11 @@ public class  Student implements Human
     public boolean HumanGender() {
         return false;
     }
-    public int gender() {
-        return 0;
-    }
 
-    @Override
+
+    public boolean gender() {
+        return false;
+    }
     public double getExperienceinYears() {
         return 0;
     }

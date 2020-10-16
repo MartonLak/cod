@@ -1,6 +1,6 @@
 package ro.fastrackit.classroom;
 
-public enum ProfessorType
+ public enum ProfessorType implements ScholarType
 {
     ASSISTANT,
     ASSOCIATE,

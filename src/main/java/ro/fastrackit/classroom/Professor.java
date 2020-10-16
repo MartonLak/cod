@@ -15,13 +15,15 @@ public class  Professor implements Human
         return false;
     }
 
-    public int gender() {
-        return 0;
+    @Override
+    public boolean gender() {
+        return false;
     }
 
     public double getExperienceinYears() {
         return 0;
     }
+
 
 
 }
