@@ -5,15 +5,15 @@ public class CheckIfPalindrome
 {
     public static void Palindrome(int i)
     {
-        int number1=0, number2=0,temp;
-        temp=i;
+        int number1=0, number2=0,save;
+        save=i;
         while(i>0)
         {
             number1=i%10;
             number2=(number2*10)+number1;
             i=i/10;
         }
-        if(temp==number2)
+        if(save==number2)
             System.out.println("palindrome number ");
         else
             System.out.println("not palindrome");
