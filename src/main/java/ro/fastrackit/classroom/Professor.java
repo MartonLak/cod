@@ -15,7 +15,7 @@ public class  Professor implements Human
         return false;
     }
 
-    @Override
+
     public boolean gender() {
         return false;
     }
@@ -24,6 +24,9 @@ public class  Professor implements Human
         return 0;
     }
 
+    public ScholarType getType() {
+        return ProfessorType.ASSOCIATE;
+    }
 
 
 }

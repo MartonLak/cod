@@ -9,5 +9,8 @@ public interface Human
     public abstract boolean gender();
     public abstract double getExperienceinYears();
 
+    public abstract ScholarType getType();
+
+
 }
 

@@ -23,4 +23,9 @@ public class  Student implements Human
         return 0;
     }
 
+    @Override
+    public ScholarType getType() {
+        return StudentType.BACHELOR;
+    }
+
 }
