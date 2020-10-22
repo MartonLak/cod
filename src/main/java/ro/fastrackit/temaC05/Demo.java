@@ -28,8 +28,8 @@ public class Demo {
 
         HashMap<String, Assignment> assignmenttest= new HashMap<String, Assignment>();
         assignmenttest.put("1"+"1easy",test1);
-        assignmenttest.put("2"+"2medium",test1);
-        assignmenttest.put("3"+"2medium",test1);
+        assignmenttest.put("2"+"2medium",test2);
+        assignmenttest.put("3"+"2medium",test3);
 
         System.out.println(assignmenttest.get("2"+"2medium"));
 
