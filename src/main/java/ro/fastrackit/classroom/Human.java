@@ -11,6 +11,5 @@ public interface Human
 
     public abstract ScholarType getType();
 
-
 }
 

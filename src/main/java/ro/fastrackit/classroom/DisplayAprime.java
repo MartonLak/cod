@@ -25,7 +25,7 @@ public class DisplayAprime
     }
     public static void main(String[] args)
     {
-       int givennumber=13;
+       int givennumber=132;
        for(int j=0;j<givennumber;j++)
        {
            if(Displayaprime(j)==true)
