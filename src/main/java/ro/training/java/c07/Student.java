@@ -17,28 +17,5 @@ public class Student extends Human {
         this.school = school;
     }
 
-    @Override
-    public String getName() {
-        return super.getName();
-    }
 
-    @Override
-    public void setName(String name) {
-        super.setName(name);
-    }
-
-    @Override
-    public Integer getAge() {
-        return super.getAge();
-    }
-
-    @Override
-    public void setAge(Integer age) {
-        super.setAge(age);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

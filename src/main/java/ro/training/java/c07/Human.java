@@ -1,6 +1,6 @@
 package ro.training.java.c07;
 
- public abstract class Human
+ public  class Human
 {
     String Name;
     Integer age;
