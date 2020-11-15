@@ -1,7 +1,13 @@
-public class PasswordRules
+package TEMAc08;
+
+import java.awt.*;
+import java.util.Scanner;
+import java.util.concurrent.ExecutionException;
+
+public class PasswordRules extends Exception
 {
 
-    public static boolean checkPass1(String password)
+    public static boolean checkPass1 (String password)
     {
         if(password.length()>=12)
         {
@@ -85,29 +91,50 @@ public class PasswordRules
     }
 
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
+
+        while (in.hasNext()) {
+            String keyboardText = in.nextLine();
+            try {
+                ValidPass(keyboardText);
+                System.out.println(checkPass3(keyboardText));
+                System.out.println(checkPass4(keyboardText));
+            }
+            catch (Exception e)
+            {
+                System.err.println(e.getMessage());
+                System.out.println(checkPass3(keyboardText));
+                System.out.println(checkPass4(keyboardText));
+            }
+        }
+    }
+
+    public static void ValidPass(String pass) throws Exception
     {
-        String pass="A123sdasdasd";
         if (checkPass1(pass)==true && checkPass2(pass)==true && checkPass3(pass)==true && checkPass4(pass)==true)
         {
-            System.out.println(pass + " is valid");
+            System.out.println(pass+" Valid Password");
         }
-        if (checkPass1(pass)==false)
+        if ((checkPass1(pass)==false)&&(checkPass2(pass)==false)&&(checkPass3(pass)==false)&&(checkPass4(pass)==false))
         {
-            System.out.println(pass + " at least 12 characters.");
+            throw new Exception(pass + " not enough long, uppercase and lowercase, letters and digits, at least 3 digits");
         }
-        if (checkPass2(pass)==false)
+        if(checkPass1(pass)==false&&(checkPass2(pass)==true)&&(checkPass3(pass)==true)&&(checkPass4(pass)==true))
         {
-            System.out.println(pass + " uppercase and lowercase.");
+            throw new Exception(pass + "not enough long");
         }
-        if (checkPass3(pass)==false)
+        if(checkPass1(pass)==true&&(checkPass2(pass)==false)&&(checkPass3(pass)==true)&&(checkPass4(pass)==true))
         {
-            System.out.println(pass + " letters and digits.");
+            throw new Exception(pass + "has uppercase and lowercase characters");
         }
-        if (checkPass4(pass)==false)
+        if(checkPass1(pass)==true&&(checkPass2(pass)==true)&&(checkPass3(pass)==false)&&(checkPass4(pass)==false))
         {
-            System.out.println(pass + " at least 3 digits.");
+            throw new Exception(pass + "has only letters and digits, contains at least 3 digits.");
         }
-
+        if(checkPass1(pass)==true&&(checkPass2(pass)==true)&&(checkPass3(pass)==true)&&(checkPass4(pass)==false))
+        {
+            throw new Exception(pass + "contains at least 3 digits.");
+        }
     }
 }
