@@ -28,13 +28,17 @@ public class Anagrams
             Arrays.sort(ch2);
 
         }
-        if(a.length()==b.length()) {
+        if(a.length()==b.length())
+        {
             for (int i = 0; i < a.length(); i++) {
                 if (ch1[i] != ch2[i]) {
                     counter++;
                 }
             }
         }
+        else
+            return false;
+        System.out.println(counter);
         if(counter==0)
         {
             return true;
@@ -45,8 +49,8 @@ public class Anagrams
         }
     }
 
-    public static void main(String[] args) throws Exception
-    {
+    public static void main(String[] args) throws Exception{
+
         Scanner in = new Scanner(System.in);
         String keyboardText1 = in.nextLine();
         String keyboardText2 = in.nextLine();
