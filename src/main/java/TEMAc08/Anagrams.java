@@ -11,6 +11,7 @@ public class Anagrams
         char[] ch1 = new char[a.length()];
         char[] ch2 = new char[b.length()];
         int counter =0;
+        int ab-0;
         for (int i =0; i<a.length();i++)
         {
             ch1[i]=a.charAt(i);
