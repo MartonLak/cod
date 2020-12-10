@@ -1,3 +1,5 @@
+package ro.fastrackit.temaC05;
+
 public class ClassScopeExample {
     public int amount = 0;
 

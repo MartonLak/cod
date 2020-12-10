@@ -1,4 +1,4 @@
-package TEMAc08;
+package TEMAc11.NewChapter;
 
 import java.awt.*;
 import java.util.Scanner;

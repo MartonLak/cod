@@ -1,4 +1,4 @@
-package TEMAc08;
+package ro.training.java.c07;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

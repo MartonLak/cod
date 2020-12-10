@@ -1,9 +1,8 @@
-package ro.training.java.C10;
+package ro.training.java.c07;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
-public class test {
+public class PickingNumbersNew {
 
 
     public static int pickingNumbers(List<Integer> a) {
