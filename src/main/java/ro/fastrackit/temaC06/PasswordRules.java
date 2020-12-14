@@ -1,8 +1,6 @@
-package TEMAc11.NewChapter;
+package ro.fastrackit.temaC06;
 
-import java.awt.*;
 import java.util.Scanner;
-import java.util.concurrent.ExecutionException;
 
 public class PasswordRules extends Exception
 {

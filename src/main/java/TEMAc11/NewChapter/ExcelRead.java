@@ -12,6 +12,8 @@ public class ExcelRead {
 
     public static void main(String[] args) throws IOException, InvalidFormatException {
 
+
+
         // Creating a Workbook from an Excel file (.xls or .xlsx)
         Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH2));
         System.out.println("Woorkbook has:" + workbook.getNumberOfSheets() + " sheets");
@@ -24,23 +26,12 @@ public class ExcelRead {
             System.out.println("\n new row! \n");
             Row currentRow = rowIt.next();
             Iterator<Cell> cellIt = currentRow.cellIterator();
-
             while (cellIt.hasNext())
             {
                 Cell next = cellIt.next();
+                CustomerPurchase myObJ1 = new CustomerPurchase(currentRow.getCell(0),currentRow.getCell(1),currentRow.getCell(2));
 
-                switch (next.getCellTypeEnum())
-                {
-                    case STRING:
-                        System.out.print(next.getStringCellValue()+"||" );
-                        break;
-                    case NUMERIC:
-                        System.out.print(next.getNumericCellValue()+"||");
-                        break;
-                    case BOOLEAN:
-                        System.out.print(next.getBooleanCellValue()+"||");
-                        break;
-                }
+                System.out.println(myObJ1);
 
             }
 

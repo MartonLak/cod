@@ -1,7 +1,5 @@
 package TEMAc12;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 public class RomantoInteger
 
 {
@@ -68,6 +66,6 @@ public class RomantoInteger
     }
     public static void main(String[] args)
     {
-        romanToInt("MCX");
+        romanToInt("LIV");
     }
 }
